@@ -13,7 +13,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Atividade1/>
-      <StatusBar style="alto" />
+      <StatusBar style="light" />
     </View>
   );
 }
