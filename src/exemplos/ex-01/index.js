@@ -1,6 +1,7 @@
 import {View, Text} from 'react-native'
 
 import styles from './styles';
+import Atividade1 from '../../atividades/atividade-01';
 
 function Exemplo1(){
     return(
