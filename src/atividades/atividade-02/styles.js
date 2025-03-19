@@ -17,10 +17,12 @@ const styles = StyleSheet.create({
         marginBottom: RFPercentage(1),
        
     },
+    
     texto: {
         fontSize: RFPercentage(2.2),
         color: '#fafafa',
     },
+    
     
 });
 

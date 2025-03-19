@@ -12,14 +12,16 @@ import Exemplo2 from './src/exemplos/ex-02';
 
 import Mensagem from './src/exemplos/ex-02/mensagem';
 
+import Atividade2 from './src/atividades/atividade-02';
+
 
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo2/>
-      <StatusBar style="light" />
+      <Atividade2/>
+      <StatusBar style="night" />
     </View>
   );
 }
@@ -27,9 +29,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
-    // alignItems: 'center',
-    // justifyContent: 'center',
+    backgroundColor: '#fff',
     padding: 8,
     padding: Constants.statusBarHeight || 8,
   },
