@@ -3,27 +3,27 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'deepskyblue',
-        borderWidth: RFPercentage(0.6),
-        width: '90%',
-        padding: 8,
+        flex: 1,
+        justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 20,
+        backgroundColor: '#f5f5f5',
     },
     titulo: {
-        fontSize: RFPercentage(3),
-        color: '#121212',   
+        fontSize: 24,
         fontWeight: 'bold',
-        marginBottom: RFPercentage(1),
+        marginBottom: 20,
+    },
+
+    texto: {
+        fontSize: 18,
+    },
+
+    img1: {
+    
+        RFPercentage width: (20),
+        RFPercentage height: (20),
        
     },
-    
-    texto: {
-        fontSize: RFPercentage(2.2),
-        color: '#fafafa',
-    },
-    
-    
-});
 
-export default styles;
+
+});
