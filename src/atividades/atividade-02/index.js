@@ -11,7 +11,7 @@ function Atividade2 (props) {
             <View style={styles.productContainer}>
                 <Text style={styles.productDescription}>Produto: Camisa Esportiva</Text>
                 <Text style={styles.productPrice}>Preço: R$ 49,90</Text>
-                <Image source={img1} style={styles.productImage} />
+                <Image source={img1} style={styles.img1} />
             </View>
         </View>
     );

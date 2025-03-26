@@ -20,10 +20,10 @@ const styles = StyleSheet.create({
 
     img1: {
     
-        RFPercentage width: (20),
-        RFPercentage height: (20),
-       
-    },
+         height: RFPercentage (3),
+
+
+    }
 
 
 });
