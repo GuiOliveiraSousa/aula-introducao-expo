@@ -3,6 +3,7 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 
 const styles = StyleSheet.create({
     container: { 
+        borderColor: 'purple',
         flexDirection: 'row', 
         backgroundColor: '#fafafa', 
         borderWidth: RFPercentage(0.6), 
