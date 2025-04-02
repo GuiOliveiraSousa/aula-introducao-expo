@@ -1,24 +1,46 @@
-import {View, Text, Button} from 'react-native'
+import { View, Text, Button, Alert, TouchableOpacity } from 'react-native';
 
 import styles from './styles';
 
+function Exemplo3() {  
 
+    function handleExibeMensagem () {
+        Alert.alert('Teste')
+    }
 
-function Exemplo3(){
-    return(
+    const handleOutroJeitoFuncao = () => {
+        Alert.alert('Título', 'Texto mensagem', [
+            {
+              text: 'Meu texto',
+              onPress: () => Alert.alert('Tchau'),
+              style: 'default',
+            },
+          ])
+    }
+
+    return (
         <View style={styles.container}>
-            <Text style={styles.título}>Exemplo 3</Text>
+            <Text style={styles.titulo}>Exemplo 3</Text>
             <Text style={styles.texto}>Variáveis vs State</Text>
-            <Button 
-            onPress={ () => {}}
-            title="Alerta"
-            color="deepskyblue"
-            accessibilityLabel="Mensagem de alerta"
+            <View style={styles.botaoAlert}>
+            <Button
+                onPress={handleOutroJeitoFuncao}
+                title="Alerta"
+                color="deepskyblue"
+                accessibilityLabel="Mensagem de alerta"                  
             />
-
         </View>
-    );
 
+        <Text  style={styles.valor}>Valor</Text>
+
+        <TouchableOpacity>
+            <Text style={styles.adicionar}>Adicionar +1</Text>
+        </TouchableOpacity>
+        
+        </View>
+
+    );
 }
 
 export default Exemplo3;
+
