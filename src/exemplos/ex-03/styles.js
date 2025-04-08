@@ -1,4 +1,4 @@
-import { StyleSheet, TouchableOpacity } from 'react-native'; 
+import { StyleSheet } from 'react-native'; 
 import { RFPercentage } from 'react-native-responsive-fontsize';
 
 const styles = StyleSheet.create({
@@ -27,27 +27,30 @@ const styles = StyleSheet.create({
     texto: {
         fontSize: RFPercentage(2.2),  
     }, 
-
     botaoAlert: {
-        width: '100%', 
-    },
-
-    adicionar: {
-        color: '#fff',
+        width: '100%',         
+        margin: RFPercentage(1),
+    }, 
+    numero: {
+        fontSize: RFPercentage(4), 
+        color: 'coral',
+        margin: RFPercentage(2)
+    }, 
+    botao: {
         backgroundColor: 'deepskyblue', 
-        padding: 10, 
-        borderRadius: 20, 
-        marginTop: 10, 
-        width: '100%', 
+        width: '70%', 
+        // height: RFPercentage(4), 
+        borderRadius: RFPercentage(2), 
         alignItems: 'center', 
+        justifyContent: 'center', 
+        padding: RFPercentage(1),
+    }, 
+    txtBotao: {
+        fontSize: RFPercentage(2), 
+        color: '#fafafa', 
+        fontWeight: 'bold', 
+        letterSpacing: 1.5,
     },
-
-    valor: {
-        fontSize: RFPercentage(2.2), 
-        color: 'deepskyblue', 
-        marginTop: 10, 
-    },
-
 });
 
 export default styles;
