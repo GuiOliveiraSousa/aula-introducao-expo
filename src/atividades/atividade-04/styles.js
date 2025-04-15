@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
       letterSpacing: 1.5,
   },
   botao: {
-        backgroundColor: '#abfa88', 
+        backgroundColor: 'deepskyblue', 
         width: '70%', 
         // height: RFPercentage(4), 
         borderRadius: RFPercentage(2), 
