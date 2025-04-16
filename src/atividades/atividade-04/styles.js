@@ -50,6 +50,10 @@ const styles = StyleSheet.create({
         borderWidth: 3,
         bordercolor: "black",
   },
+  nomesobrenome: {
+    color: 'deepskyblue',
+ 
+  },
 });
 
 export default styles; // Exportando o objeto styles

@@ -7,31 +7,32 @@ import styles from "./styles"; // Importando o objeto styles do arquivo styles.j
 
 
 function Atividade4 () {
-  const[txtInserido, setTxtInserido] = useState('');
   const[txtExibido, setTxtExibido] = useState('');
-
   const[txtInserido1, setTxtInserido1] = useState('');
-  const[txtExibido2, setTxtExibido2] = useState('');
+  const[txtInserido2, setTxtInserido2] = useState('');
 
   return (
     
     <View style={styles.container}>
 
       <Text style={styles.titulo}>Atividade 4</Text>
-      <Text style={styles.texto}>{txtInserido}</Text>
 
-      <Text>Nome</Text>
+      <Text style={styles.nomesobrenome}>Nome</Text>
       <TextInput style={styles.input} 
-        onChangeText={(valor) =>setTxtInserido(valor)}/>
+      value ={txtInserido1}
+        onChangeText={(valor) =>setTxtInserido1(valor)}/>
 
-      <Text>Sobrenome</Text>
+      <Text style={styles.nomesobrenome}>Sobrenome</Text>
       <TextInput style={styles.input} 
-        onChangeText={(valor) =>setTxtInserido(valor)}/>
+        value ={txtInserido2}
+        onChangeText={(valor) =>setTxtInserido2(valor)}/>
 
       <Text style={styles.texto}> {txtExibido}</Text>
       <TouchableOpacity style={styles.botao}
         onPress={() => {
-          setTxtExibido(txtInserido);
+          setTxtExibido(  txtInserido1 + ' ' + txtInserido2)
+          setTxtInserido1('')
+          setTxtInserido2('');
         }}>
         <Text style={styles.txtBotao}>Exibir texto 
         </Text>
