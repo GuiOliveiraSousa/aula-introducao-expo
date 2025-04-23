@@ -7,7 +7,7 @@ import styles from './styles';
 
 
 
-export function Exemplo5(){
+export function Atividade5(){
     const [n1, setN1] = useState('0');
     const [n2, setN2] = useState('0');
     const [total, setTotal] = useState('0');
@@ -16,13 +16,24 @@ export function Exemplo5(){
     setTotal(parseFloat(n1) + parseFloat(n2));
     }
     
+    function subtrair(){
+        setTotal(parseFloat(n1) - parseFloat(n2));
+     }
 
+     function multiplicar(){
+        setTotal(parseFloat(n1) * parseFloat(n2));
+     }
+        
+
+     function dividir(){
+        setTotal(parseFloat(n1) / parseFloat(n2));
+     }
 
     
 
     return(
         <View style={styles.container}>
-            <Text style={styles.paragraph}>Exemplo 5</Text>
+            <Text style={styles.paragraph}>Atividade 5</Text>
 
             <Text style={styles.textSaida}>Calculadora básica</Text>
 
@@ -30,7 +41,7 @@ export function Exemplo5(){
             <TextInput style={styles.txtEntrada} onChangeText={(entrada) => setN1(entrada)}
                 value={n1.toString()}></TextInput>
 
-            <Text style={styles.textSaida}> + </Text>
+            
 
             <Text style={styles.textLabel}>2º número</Text>
             <TextInput style={styles.txtEntrada} onChangeText={(entrada) => setN2(entrada)}
@@ -46,8 +57,19 @@ export function Exemplo5(){
             <TouchableOpacity style={styles.botao } onPress={() => somar()}>
                 <Text style={styles.textButton}> Calcular </Text>
             </TouchableOpacity>
-        
 
+            <TouchableOpacity style={styles.botao } onPress={() => subtrair()}>
+                <Text style={styles.textButton}> Subtrair </Text>
+            </TouchableOpacity>
+        
+            <TouchableOpacity style={styles.botao } onPress={() => multiplicar()}>
+                <Text style={styles.textButton}> Multiplicar </Text>
+            </TouchableOpacity>
+        
+            <TouchableOpacity style={styles.botao } onPress={() => dividir()}>
+                <Text style={styles.textButton}> Dividir </Text>
+            </TouchableOpacity>
+        
 
 
         </View>
@@ -55,4 +77,4 @@ export function Exemplo5(){
 
 }
 
-export default Exemplo5;
+export default Atividade5;
