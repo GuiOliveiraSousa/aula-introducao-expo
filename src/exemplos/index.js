@@ -6,8 +6,7 @@ export default function Exemplos() {
     
     <View style={styles.container}>
         <Text style={styles.titulo}>Exemplos</Text>
-        <Text>Exemplos</Text>
-
+      
         <TouchableOpacity style={styles.botao}>
             <Text>Exemplos 1</Text>
             </TouchableOpacity>
