@@ -28,7 +28,12 @@ import Atividade6 from './src/atividades/atividade-06';
 
 import Exemplo8 from './src/exemplos/ex-08';
 import Exemplos from './src/exemplos';
+import Atividade from './src/atividades';
+import Sobre from './src/sobre';
 
+
+import 'react-native-gesture-handler';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 
 
@@ -36,7 +41,7 @@ import Exemplos from './src/exemplos';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplos/>
+      <Sobre/>
       <StatusBar style="night" />
     </View>
   );
