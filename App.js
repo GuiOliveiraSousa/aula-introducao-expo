@@ -32,16 +32,14 @@ import Atividade from './src/atividades';
 import Sobre from './src/sobre';
 
 
-import 'react-native-gesture-handler';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-
+import Container from './src/rotas/containerNavegacao';
 
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Sobre/>
+      <Container/>
       <StatusBar style="night" />
     </View>
   );
